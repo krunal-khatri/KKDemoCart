@@ -44,7 +44,7 @@ const ProductDetail = ({route}) => {
 
   return (
     <ScrollView style={styles.root}>
-      <Header title={'Product Detail'} />
+      <Header isback title={'Product Detail'} />
       <View style={styles.card}>
         <FastImage
           style={{height: height * 0.35, marginVertical: light.spacer[4]}}

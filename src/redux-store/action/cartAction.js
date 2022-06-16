@@ -39,7 +39,6 @@ export const handleAddCart = (
                 tempCart.splice(i, 1);
               }
             }
-            console.log(tempCart);
           } else {
             existingCartObj.quantity = existingCartObj.quantity - 1;
             setQuantity(existingCartObj.quantity);
