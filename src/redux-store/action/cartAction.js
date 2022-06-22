@@ -1,5 +1,7 @@
+import {MAX_CART_QUANTITY} from '../../constants/constants';
 import {
   calculateTotalFromArray,
+  displayMessage,
   findFromArrayByProperty,
 } from '../../utils/commonActions';
 import {CART} from '../type';
@@ -44,8 +46,16 @@ export const handleAddCart = (
             setQuantity(existingCartObj.quantity);
           }
         } else {
-          existingCartObj.quantity = existingCartObj.quantity + 1;
-          setQuantity(existingCartObj.quantity);
+          if (existingCartObj?.quantity + 1 <= MAX_CART_QUANTITY) {
+            existingCartObj.quantity = existingCartObj.quantity + 1;
+            setQuantity(existingCartObj.quantity);
+          } else {
+            displayMessage(
+              'Warning',
+              `You cannot add more than ${MAX_CART_QUANTITY} items in cart`,
+              'warning',
+            );
+          }
         }
       } else {
         tempCart.push(params);

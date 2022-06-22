@@ -11,6 +11,7 @@ export const DUMMY_DATA = [
       rate: 3.9,
     },
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
+    stock: 10,
   },
   {
     category: "men's clothing",
@@ -25,6 +26,7 @@ export const DUMMY_DATA = [
       rate: 4.1,
     },
     title: 'Mens Casual Premium Slim Fit T-Shirts ',
+    stock: 100,
   },
   {
     category: "men's clothing",
@@ -38,6 +40,7 @@ export const DUMMY_DATA = [
       rate: 4.7,
     },
     title: 'Mens Cotton Jacket',
+    stock: 20,
   },
   {
     category: "men's clothing",
@@ -51,6 +54,7 @@ export const DUMMY_DATA = [
       rate: 2.1,
     },
     title: 'Mens Casual Slim Fit',
+    stock: 25,
   },
   {
     category: 'jewelery',
@@ -65,6 +69,7 @@ export const DUMMY_DATA = [
     },
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    stock: 50,
   },
   {
     category: 'jewelery',
@@ -78,6 +83,7 @@ export const DUMMY_DATA = [
       rate: 3.9,
     },
     title: 'Solid Gold Petite Micropave ',
+    stock: 150,
   },
   {
     category: 'jewelery',
@@ -91,6 +97,7 @@ export const DUMMY_DATA = [
       rate: 3,
     },
     title: 'White Gold Plated Princess',
+    stock: 24,
   },
   {
     category: 'jewelery',
@@ -117,6 +124,7 @@ export const DUMMY_DATA = [
       rate: 3.3,
     },
     title: 'WD 2TB Elements Portable External Hard Drive - USB 3.0 ',
+    stock: 101,
   },
   {
     category: 'electronics',
@@ -130,5 +138,8 @@ export const DUMMY_DATA = [
       rate: 2.9,
     },
     title: 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s',
+    stock: 100,
   },
 ];
+
+export const MAX_CART_QUANTITY = 4;

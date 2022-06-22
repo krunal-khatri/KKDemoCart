@@ -1,3 +1,4 @@
+import {showMessage, hideMessage} from 'react-native-flash-message';
 export const findFromArrayByProperty = (array, property, query) => {
   const result = array.find(obj => {
     return obj[property] === query;
@@ -11,4 +12,12 @@ export const calculateTotalFromArray = array => {
     totalQuantity = totalQuantity + element?.quantity;
   }
   return totalQuantity;
+};
+
+export const displayMessage = (msg, description, type = 'success') => {
+  showMessage({
+    message: msg,
+    description: description,
+    type: type,
+  });
 };

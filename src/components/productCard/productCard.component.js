@@ -84,6 +84,13 @@ const ProductCard = ({item, isFocused, filterCartData}) => {
             text={` ${item?.rating?.rate} (${item?.rating?.count})`}
           />
         </View>
+        <_Text
+          numberOfLines={1}
+          style={styles.descriptionText}
+          text={`In stock: ${
+            isNaN(item?.stock - quantity) ? item?.stock : item?.stock - quantity
+          }`}
+        />
         {quantity ? (
           <Counter addToCart={addToCart} quantity={quantity} />
         ) : (
